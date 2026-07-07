@@ -224,6 +224,10 @@ PRODUCT_PACKAGES += \
 # Properties
 include $(LOCAL_PATH)/vendor_logtag.mk
 
+# Remove Packages
+PRODUCT_PACKAGES += \
+    remove-packages
+
 # Rootdir
 PRODUCT_PACKAGES += \
     fstab.mt6768 \
