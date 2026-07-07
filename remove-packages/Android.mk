@@ -9,10 +9,10 @@ LOCAL_OVERRIDES_PACKAGES := \
     Chrome \
     Chrome-Stub \
     Drive \
-    GoogleTTS \
     Maps \
     PersonalSafety \
     Photos \
+    SpeechServicesByGoogle \
     Wellbeing \
     YouTube
 LOCAL_UNINSTALLABLE_MODULE := true
