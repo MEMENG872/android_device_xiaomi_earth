@@ -14,7 +14,7 @@ $(call inherit-product, device/xiaomi/earth/device.mk)
 # Inherit some common Project InfinityX stuff.
 $(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
-INFINITY_MAINTAINER := Kumiko
+INFINITY_MAINTAINER := Makinohara
 WITH_GAPPS := true
 
 PRODUCT_NAME := infinity_earth
