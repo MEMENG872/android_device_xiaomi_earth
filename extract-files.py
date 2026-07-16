@@ -50,7 +50,8 @@ blob_fixups: blob_fixups_user_type = {
         .add_line_if_missing('    interface android.hardware.media.c2@1.1::IComponentStore default')
         .add_line_if_missing('    interface android.hardware.media.c2@1.2::IComponentStore default'),
     ('vendor/bin/mnld', 'vendor/lib64/libaalservice.so', 'vendor/lib64/libcam.utils.sensorprovider.so'): blob_fixup()
-        .replace_needed('libsensorndkbridge.so', 'android.hardware.sensors@1.0-convert-shared.so'),
+        .replace_needed('libsensorndkbridge.so', 'android.hardware.sensors@1.0-convert-shared.so')
+        .replace_needed('libmnl.so', 'libmnl_mtk.so'),
     'vendor/lib64/hw/vendor.mediatek.hardware.pq@2.15-impl.so': blob_fixup()
         .replace_needed('libutils.so', 'libutils-v32.so')
         .replace_needed('libsensorndkbridge.so', 'android.hardware.sensors@1.0-convert-shared.so'),
@@ -62,7 +63,7 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libcamera2ndk_vendor.so', 'libcamera2ndk_vendor-v35.so'),
     ('vendor/lib64/libteei_daemon_vfs.so', 'vendor/lib64/lib3a.flash.so', 'vendor/lib64/libSQLiteModule_VER_ALL.so'): blob_fixup()
         .add_needed('liblog.so'),
-    'vendor/lib64/libmnl.so' : blob_fixup()
+    'vendor/lib64/libmnl_mtk.so' : blob_fixup()
         .add_needed('libcutils.so'),
     'vendor/lib/hw/audio.primary.mt6768.so' : blob_fixup()
         .add_needed('libstagefright_foundation-v33.so'),
