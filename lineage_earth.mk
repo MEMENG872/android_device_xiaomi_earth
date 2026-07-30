@@ -32,3 +32,22 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     SystemName=$(PRODUCT_SYSTEM_NAME) \
     ProductModel=$(PRODUCT_SYSTEM_DEVICE) \
     DeviceProduct=$(PRODUCT_SYSTEM_NAME)
+
+# Device Flags
+
+# Maintainer name (use "_" for spaces, e.g., "rmp_22" → "rmp 22" in UI)
+AXION_MAINTAINER := Kuruzaki
+
+# Processor name (use "_" for spaces)
+AXION_PROCESSOR := Mediatek_Helio_G85
+
+# Define rear camera specs (multiple sensors supported)
+AXION_CAMERA_REAR_INFO := 50
+
+# Define front camera specs
+AXION_CAMERA_FRONT_INFO := 0,08
+
+# BLur
+TARGET_ENABLE_BLUR := true
+
+TARGET_INCLUDE_AXFX := true
