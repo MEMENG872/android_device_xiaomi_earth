@@ -9,7 +9,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from device makefile.
-$(call inherit-product, device/xiaomi/earth/device.mk)
+$(call inherit-product, device/xiaomi/earth/device.mk)    
 
 # Inherit some common Project InfinityX stuff.
 $(call inherit-product, vendor/infinity/config/common_full_phone.mk)
